@@ -25,4 +25,8 @@ RSpec.describe 'User can create an account' do
     expect(page).to have_content("#{user.last_name}")
     expect(page).to have_content("#{user.address}")
   end
+
+  scenario 'sad path for user creation' do
+
+  end 
 end

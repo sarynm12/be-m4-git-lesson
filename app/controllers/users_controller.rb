@@ -5,6 +5,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def index
+    'more nonsense in this action'
+  end
+
   def create
     user = User.new(user_params)
     if user.save
